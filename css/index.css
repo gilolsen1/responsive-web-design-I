@@ -69,12 +69,13 @@ dont look at it until you think you have it done try to do the whole thing in un
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
     width: 100%
 }
 
 nav a {
-    justify-content: space-around;
-    align-items:flex-end;
+    
     color: grey;
     background: none;
 
