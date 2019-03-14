@@ -109,6 +109,13 @@ nav {
     border: 1px solid orange;
 }
 
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center; /*another attempt to cetner logo*/
+    }
+}
+
 
 nav a {
     color: grey;
@@ -129,6 +136,14 @@ display: flex;
 flex-direction: row;
 justify-content: flex-end;
 border: solid 1px greenyellow;
+}
+
+@media (max-width: 800px){
+    #nav_logo {
+        justify-content: center; /*but why not*/
+        align-items: center;
+        margin: auto; /*MARGIN AUTO FTW */
+        }
 }
 
 header {
