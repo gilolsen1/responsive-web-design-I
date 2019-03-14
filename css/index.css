@@ -49,6 +49,23 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* NEXT:
 1 DONE-----------add css reset
 2 add the rest of content and HTML
@@ -56,14 +73,16 @@ table {
 4. style with flexbox.
  
 dont look at it until you think you have it done try to do the whole thing in under 60 min
-
+.container {   MY VERSTION
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 1%;
+    padding: 1%;
+}
 */
 
 .container {
-    box-sizing: border-box;
-    max-width: 1080px;
-    margin: 1%;
-    padding: 1%;
+    max-width: 900px;
 }
 
 nav {
@@ -71,13 +90,14 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items:flex-end;
-    width: 100%
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
 nav a {
-    
     color: grey;
     background: none;
+    text-decoration: none;
 
 }
 nav a :hover {
@@ -95,12 +115,38 @@ header {
     display: flex;
     flex-direction: row;
     width: 100%;
+    border: 1px blue solid;
+    margin-bottom: 4rem;
 }
 
-.hero_div {
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.hero_div_brand_cta {
+    border: solid 1px red;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
+    margin: 10px
+}
+button {
+    border: solid 1px black;
+    padding: 10px 50px 10px 50px;
+    background-color: none;
+   
+}
+
+.hero_div_circle_code_img {
+    border: solid 1px red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     margin: 10px;
 }
 
@@ -108,12 +154,15 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
+
 
 .two_wide_div {
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
     margin: 10px;
 }
 
@@ -129,13 +178,13 @@ header {
 .three_wide_div {
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 33%;
     margin: 10px;
 }
 
 address {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
