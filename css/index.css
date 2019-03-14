@@ -88,10 +88,17 @@ dont look at it until you think you have it done try to do the whole thing in un
 
 /*display flex on nav wrapper */
 
-#nav-wrapper {
+#nav-items-div {
     display: flex;
-    border: solid 5px blueviolet;
+    border: solid 2px blueviolet;
+    /*copy properties from nav to here then wrap*/
+    justify-content: space-around;
+    align-items:flex-end;
+    width: 100%; /*conflict? */
+
+        
 }
+/**/
 nav {
     display: flex;
     flex-direction: row;
@@ -102,12 +109,14 @@ nav {
     border: 1px solid orange;
 }
 
+
 nav a {
     color: grey;
     background: none;
     text-decoration: none;
     text-align: center;
-    border: solid 1px yellow;
+    font-size: 20px;
+    border: solid 1px rgb(255, 0, 4);
 
 }
 nav a :hover {
