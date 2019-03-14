@@ -86,6 +86,12 @@ dont look at it until you think you have it done try to do the whole thing in un
     margin:10px;
 }
 
+/*display flex on nav wrapper */
+
+#nav-wrapper {
+    display: flex;
+    border: solid 5px blueviolet;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -93,6 +99,7 @@ nav {
     align-items:flex-end;
     width: 100%;
     margin-bottom: 4rem;
+    border: 1px solid orange;
 }
 
 nav a {
@@ -100,6 +107,7 @@ nav a {
     background: none;
     text-decoration: none;
     text-align: center;
+    border: solid 1px yellow;
 
 }
 nav a :hover {
@@ -111,6 +119,7 @@ nav a :hover {
 display: flex;
 flex-direction: row;
 justify-content: flex-end;
+border: solid 1px greenyellow;
 }
 
 header {
@@ -150,6 +159,12 @@ button {
     align-items: center;
     width: 50%;
     margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .hero_div_circle_code_img {
+        display:none;
+    }
 }
 
 .two_wide {
