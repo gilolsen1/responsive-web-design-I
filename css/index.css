@@ -144,6 +144,19 @@ h1 {
     width: 50%;
     margin: 10px
 }
+
+@media (max-width:800px){
+    .hero_div_brand_cta {
+        border: solid 1px red;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px
+    }
+}
+
 button {
     border: solid 1px black;
     padding: 10px 50px 10px 50px;
