@@ -83,6 +83,7 @@ dont look at it until you think you have it done try to do the whole thing in un
 
 .container {
     max-width: 900px;
+    margin:10px;
 }
 
 nav {
@@ -98,6 +99,7 @@ nav a {
     color: grey;
     background: none;
     text-decoration: none;
+    text-align: center;
 
 }
 nav a :hover {
@@ -141,7 +143,7 @@ button {
 }
 
 .hero_div_circle_code_img {
-    border: solid 1px red;
+    border: solid 1px green;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -166,13 +168,18 @@ button {
     margin: 10px;
 }
 
-/*divider code image not styled */
+.mid-page-accent-img {
+    display: flex;
+    width: 100%;
+}
 
 
 .three_wide {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .three_wide_div {
@@ -186,12 +193,16 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
