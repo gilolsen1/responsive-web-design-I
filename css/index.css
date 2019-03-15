@@ -137,6 +137,9 @@ nav a {
     border: solid 1px rgb(255, 0, 4);
     padding: 10px;
 }
+/*NEXT ACTION ITEM HERE:  
+MOBILE NAV FINISH AND REST OF CONTENT 
+also center main container for desktop*/
 
 @media (max-width: 500px) {
     nav a{
@@ -164,6 +167,16 @@ border: solid 1px greenyellow;
         align-items: center;
         margin: auto; /*MARGIN AUTO FTW */
         }
+}
+@media (max-width: 500px){
+    #nav_logo {
+        justify-content: center; /*but why not*/
+        align-items: center;
+        margin-left: auto; /*MARGIN AUTO FTW */
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
 }
 
 header {
@@ -231,6 +244,17 @@ button {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+@media (max-width: 500px){
+    .two_wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%; /*make divs 100% width */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
 
 
 .two_wide_div {
@@ -238,6 +262,15 @@ button {
     align-items: center;
     width: 50%;
     margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .two_wide_div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
 }
 
 .mid-page-accent-img {
@@ -254,11 +287,31 @@ button {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 500px){
+    .three_wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%; /*make divs 100% width */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .three_wide_div {
     justify-content: center;
     align-items: center;
     width: 33%;
     margin: 10px;
+}
+@media (max-width: 500px) {
+    .three_wide_div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
 }
 
 address {
