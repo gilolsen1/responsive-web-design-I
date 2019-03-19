@@ -1,3 +1,342 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* NEXT:
+1 DONE-----------add css reset
+2 add the rest of content and HTML
+3. DONE---------dont forget container: box-borderbox??? 
+4. style with flexbox.
+ 
+dont look at it until you think you have it done try to do the whole thing in under 60 min
+.container {   MY VERSTION
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 1%;
+    padding: 1%;
+}
+*/
+
+.container {
+    max-width: 900px;
+    margin:10px;
+}
+
+/*display flex on nav wrapper */
+
+#nav-items-div {
+    display: flex;
+    border: solid 2px blueviolet;
+    /*copy properties from nav to here then wrap*/
+    justify-content: space-around;
+    align-items:flex-end;
+    width: 100%; /*conflict? */  
+}
+
+/*NEXT ACTION ITEM   mobile nav*/
+@media (max-width:500px){
+    #nav-items-div {
+        display: flex;
+        flex-direction:column;
+        border: solid 2px blueviolet;
+        justify-content: space-around;
+        align-items:center;
+        width: 100%; 
+    }
+}
+
+/**/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
+    width: 100%;
+    margin-bottom: 4rem;
+    border: 1px solid orange;
+}
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center; /*another attempt to cetner logo*/
+    }
+}
+
+
+nav a {
+    color: grey;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border: solid 1px rgb(255, 0, 4);
+    padding: 10px;
+}
+/*NEXT ACTION ITEM HERE:  
+MOBILE NAV FINISH AND REST OF CONTENT 
+also center main container for desktop*/
+
+@media (max-width: 500px) {
+    nav a{
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px grey;
+    } 
+}
+
+nav a :hover {
+    background-color: black;
+    color:white;
+}
+
+#nav_logo {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+border: solid 1px greenyellow;
+}
+
+@media (max-width: 800px){
+    #nav_logo {
+        justify-content: center; /*but why not*/
+        align-items: center;
+        margin: auto; /*MARGIN AUTO FTW */
+        }
+}
+@media (max-width: 500px){
+    #nav_logo {
+        justify-content: center; /*but why not*/
+        align-items: center;
+        margin-left: auto; /*MARGIN AUTO FTW */
+        margin-right: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px blue solid;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.hero_div_brand_cta {
+    border: solid 1px red;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px
+}
+
+@media (max-width:800px){
+    .hero_div_brand_cta {
+        border: solid 1px red;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px
+    }
+}
+
+button {
+    border: solid 1px black;
+    padding: 10px 50px 10px 50px;
+    background-color: none;
+   
+}
+
+.hero_div_circle_code_img {
+    border: solid 1px green;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .hero_div_circle_code_img {
+        display:none;
+    }
+}
+
+.two_wide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 500px){
+    .two_wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%; /*make divs 100% width */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.two_wide_div {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .two_wide_div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.mid-page-accent-img {
+    display: flex;
+    width: 100%;
+}
+
+
+.three_wide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 500px){
+    .three_wide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%; /*make divs 100% width */
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.three_wide_div {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 10px;
+}
+@media (max-width: 500px) {
+    .three_wide_div {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
 
